@@ -38,7 +38,7 @@ with col1:
 with col2:
     st.info("🛠️ **Condition & Quality**")
     OverallQual = st.slider("Overall Quality (1=Poor, 10=Luxury)", 1, 10, 5)
-    YearBuilt = st.number_input("📅 Year Built", min_value=1900, max_value=2024, value=2000)
+    YearBuilt = st.number_input("📅 Year Built", min_value=1900, max_value=2025, value=2000)
 
 with col3:
     st.info("🛁 **Amenities**")
@@ -93,4 +93,5 @@ if st.button("🚀 Estimate Price & Value", type="primary", use_container_width=
             
         with res_col2:
             st.info("### 🏙️ Neighborhood Rating")
+
             st.write(f"Based on the specs, this property fits into a **{neighborhood_status}** category.")
